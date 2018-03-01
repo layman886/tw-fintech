@@ -165,15 +165,17 @@ export default class StickyLayout extends Component {
           <Visibility
             offset={80}
             once={false}
-            onTopPassed={this.stickOverlay}
+            // onTopPassed={this.stickOverlay}
             onTopVisible={this.unStickOverlay}
             style={overlayFixed ? { ...overlayStyle, ...overlayRect } : {}}
           />
 
+          <ChartComponent />
+
           <div
             ref={this.handleOverlayRef}
-            style={overlayFixed ? fixedOverlayStyle : overlayStyle}
-            // style={overlayStyle}
+            // style={overlayFixed ? fixedOverlayStyle : overlayStyle}
+            style={fixedOverlayStyle}
           >
             <Menu
               icon='labeled'
@@ -200,7 +202,6 @@ export default class StickyLayout extends Component {
 
           {/* { _.times(3, i => <Paragraph key={i} />) } */}
           <Paragraph />
-          <ChartComponent />
           
           {/* <LeftImage /> */}
         </Container>
