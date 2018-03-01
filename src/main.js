@@ -125,7 +125,7 @@ export default class StickyLayout extends Component {
           >
             <Container text>
               <Menu.Item>
-                <Image size='mini' src='/stock up.png' />
+                <Image size='mini' src='stockUp.png' />
               </Menu.Item>
               <Menu.Item header>股市行情</Menu.Item>
               <Menu.Item as='a'>新聞</Menu.Item>
@@ -248,7 +248,7 @@ export default class StickyLayout extends Component {
               </Grid.Row>
             </Grid>
             <Divider inverted section />
-            <Image src='/stock up.png' centered size='mini' />
+            <Image src='stockUp.png' centered size='mini' />
             <List horizontal inverted divided link>
               <List.Item as='a' href='#'>Site Map</List.Item>
               <List.Item as='a' href='#'>Contact Us</List.Item>
